@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    text-align: center;
+}
+.navbar-ul{
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.navbar-ul li{
+    display:inline-block;
+    padding: 20px;
+}
+.navbar-ul li:hover{
+    background-color:  #e0e0e177;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(16, 16, 16);
+}
+.navbar-ul a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+hr{
+    margin-top: 2px;
+}
+
+.content{
+    margin-top: 50px;
+    height: 400px;
+    padding: 100px 50px 0 150px;
+    background: rgb(166,166,166);
+    background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(249, 249, 249) 26%, rgb(251, 251, 251) 42%, rgba(253,255,255,1) 89%, rgb(255, 255, 255) 98%);
+}
+.content-info{
+    float: left;
+}
+.content-h1{
+    font-size: 54px;
+    font-family: 'Quicksand', sans-serif;
+}
+@keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 620px;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+.content-h3{
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(35) infinite alternate,
+    blink 500ms steps(13) infinite normal;
+    border-right: 5px solid black;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.content-button{
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+@keyframes button-anim{
+    0%{ box-shadow: 0px 5px 25px rgba(0,0,0,0.4);}
+    100%{
+        box-shadow: 0px 5px 25px rgba(0,0,0,0.4);
+    }
+}
+.content-button:hover{
+    background-color: rgba(223, 223, 223, 0.323);
+    animation-name: button-anim;
+    animation-duration: 5s;
+}
+.content-img{
+    width: 500px;
+    float: right;
+    border-radius: 10%;
+}
+
+.content-2{
+    height: 500px;
+}
+.content-2-type{
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+
+@keyframes card-animation-show{
+    0%{left: -600px;}
+    100%{left:100px;}
+}
+@keyframes card-animation2-show{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes card-animation3-show{0%{right: -600px;}
+    100%{right:100px;}
+}
+.card{
+    width: 26%;
+    display: inline-block;
+    height: 320px;
+    margin: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* border: 3.5px solid rgb(188, 188, 188);
+    border-radius: 1px; */
+    background-color: rgba(143, 143, 143, 0.158);
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.5);
+    padding: 5px;
+    /* visibility: hidden; */
+}
+.anim2{
+    animation-name: card-animation2;
+    animation-duration: 1s;
+}
+.fade-in{
+    opacity: 0;
+    /* transition: opacity 250ms ease-in; */
+}
+/* @keyframes scroll-anim{
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+
+} */
+.fade-in.appear1{
+    animation-name: card-animation-show;
+    animation-duration: 1s;
+    opacity: 1;
+}
+.fade-in.appear2{
+    animation-name: card-animation2-show;
+    animation-duration: 1s;
+    opacity: 1;
+}
+.fade-in.appear3{
+    animation-name: card-animation3-show;
+    animation-duration: 1s;
+    opacity: 1;
+}
+.card1{
+    position: absolute;
+    left:100px;
+    top: 90px;
+}
+.card1-text{
+    visibility: visible;
+    position: absolute;
+    left:100px;
+    top: 60px;
+    z-index: -1;
+}
+.card1-text ul{list-style-type:square;margin-top: 10px;}
+.card-img{
+    visibility: hidden;
+}
+.card2{
+    position: absolute;
+    left:560px;
+    top: 90px;
+}
+.card3{
+    position: absolute;
+    right: 100px;
+    top: 90px;
+}
+.changevisible{
+    visibility: hidden;
+}
+
+.videoPlayer{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 600px;
+    background: rgb(166,166,166);
+    background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(249, 249, 249) 26%, rgb(251, 251, 251) 42%, rgba(253,255,255,1) 89%, rgb(255, 255, 255) 98%);
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.container{
+    text-align: justify;
+    margin-left: 100px;
+}
+.form-control{
+    width: 80%;
+    height: 36px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.marketing{
+    width: 100%;
+    text-align: center;
+    height: 800px;
+    background: rgb(166,166,166);
+    background: linear-gradient(90deg, rgb(214, 214, 214) 0%, rgb(249, 249, 249) 26%, rgb(251, 251, 251) 42%, rgba(253,255,255,1) 89%, rgb(255, 255, 255) 98%);
+    /* padding: 30px auto 20px auto; */
+    padding-top: 20px;
+}
+.marketing-h1{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Barlow', sans-serif;
+}
+.customer1,.customer2{
+    width: 50%;
+    height: 300px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 5px 25px rgba(0,0,0,0.5);;
+}
+@keyframes customer1-anim{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.customer1{
+    float: left;
+    margin:30px 0px 0px 30px;
+    animation-name: customer1-anim;
+    animation-duration: 2s;
+}
+.customer2{
+    float: right;
+    margin:30px 30px 0px 0px;
+}
+
+
+.endBar{
+    width: 100%;
+    height: 280px;
+    padding-top: 30px;
+    background-color: rgb(37, 40, 44);
+    text-align: center;
+
+}
+.list1{
+    border-right: solid 1px grey;
+    padding-right: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+.list1 h3{
+    margin-bottom: 30px;
+}
+.list1 li{
+    color: rgb(182, 182, 182);
+    text-align: left;
+}
+.myfooter{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    text-align: center;
+    box-sizing: border-box;
+}
+
